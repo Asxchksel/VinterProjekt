@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/CardDeck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dealer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hobbyist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
+    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="Made classes and started with some small things">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardDeck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2YqMAKVx4lRaKJCFDnJdU8pvU8B" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,6 +47,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -60,7 +59,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701248512652</updated>
-      <workItem from="1701248513663" duration="2602000" />
+      <workItem from="1701248513663" duration="2918000" />
+      <workItem from="1701854675178" duration="1852000" />
+      <workItem from="1701856726665" duration="29000" />
+      <workItem from="1701856763437" duration="627000" />
+      <workItem from="1702281097728" duration="2075000" />
     </task>
     <task id="LOCAL−00001" summary="start">
       <option name="closed" value="true" />
@@ -69,7 +72,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1701248536256</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Made classes and started with some small things">
+      <option name="closed" value="true" />
+      <created>1701252568595</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1701252568595</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,6 +87,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="Made classes and started with some small things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made classes and started with some small things" />
   </component>
 </project>
