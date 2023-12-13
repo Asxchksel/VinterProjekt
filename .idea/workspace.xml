@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="Made classes and started with some small things">
+    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="random card given">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardDeck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -38,19 +38,29 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-azul-20.0.2-3183f394aec4-4edb7f01" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,7 +73,10 @@
       <workItem from="1701854675178" duration="1852000" />
       <workItem from="1701856726665" duration="29000" />
       <workItem from="1701856763437" duration="627000" />
-      <workItem from="1702281097728" duration="2075000" />
+      <workItem from="1702281097728" duration="2213000" />
+      <workItem from="1702458066302" duration="656000" />
+      <workItem from="1702458892725" duration="1060000" />
+      <workItem from="1702459974944" duration="2170000" />
     </task>
     <task id="LOCAL−00001" summary="start">
       <option name="closed" value="true" />
@@ -79,7 +92,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1701252568595</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="random card given">
+      <option name="closed" value="true" />
+      <created>1702284130968</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1702284130968</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +108,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="Made classes and started with some small things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made classes and started with some small things" />
+    <MESSAGE value="random card given" />
+    <option name="LAST_COMMIT_MESSAGE" value="random card given" />
   </component>
 </project>

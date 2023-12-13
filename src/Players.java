@@ -5,6 +5,8 @@ private int cardValue;
 
 public Players(){}
 
+public void getCard(){
 
+    }
 
 }
