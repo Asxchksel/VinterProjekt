@@ -6,6 +6,7 @@ import java.util.random.RandomGenerator;
 public class CardDeck {
     private ArrayList <Integer> cardRank = new ArrayList<>();
     private ArrayList <String> cardSuit = new ArrayList<>();
+    private int cardValue;
 
     public CardDeck(){
         cardSuit.add("Hearts");
@@ -36,6 +37,37 @@ public class CardDeck {
         int randomSuit = random.nextInt(0, 4);
         String drawnSuit = cardSuit.get(randomSuit);
 
-        System.out.println("Your drawn card is " + drawnCard + " of " + drawnSuit);
+        switch (drawnCard) {
+            case 1:
+                System.out.println("Your drawn card is Ace of " + drawnSuit);
+                if(cardValue + 11 > 21){
+                    cardValue += 1;
+                }
+                else{
+                    cardValue += 11;
+                }
+                break;
+            case 11:
+                System.out.println("Your drawn card is Jack of " + drawnSuit);
+                cardValue += 10;
+                break;
+            case 12:
+                System.out.println("Your drawn card is Queen of " + drawnSuit);
+                cardValue += 10;
+                break;
+            case 13:
+                System.out.println("Your drawn card is King of " + drawnSuit);
+                cardValue += 10;
+                break;
+            default:
+                System.out.println("Your drawn card is " + drawnCard + " of " + drawnSuit);
+                cardValue += drawnCard;
+                break;
+        }
+
+    }
+
+    public int getCardValue() {
+        return cardValue;
     }
 }

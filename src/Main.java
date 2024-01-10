@@ -2,8 +2,11 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        CardDeck deck = new CardDeck();
+        Dealer dealer = new Dealer();
+        Hobbyist Player1 = new Hobbyist();
 
-        deck.drawCard();
+        Player1.drawCard();
+
+
     }
 }
