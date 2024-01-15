@@ -26,7 +26,7 @@ public class CardDeck {
         cardRank.add(4);
         cardRank.add(3);
         cardRank.add(2);
-
+        this.cardValue = cardValue;
     }
 
     public void drawCard(){
@@ -40,34 +40,40 @@ public class CardDeck {
         switch (drawnCard) {
             case 1:
                 System.out.println("Your drawn card is Ace of " + drawnSuit);
-                if(cardValue + 11 > 21){
-                    cardValue += 1;
+                if(this.cardValue + 11 > 21){
+                    this.cardValue += 1;
+                    System.out.println("Current hand value is: " + this.cardValue);
                 }
                 else{
-                    cardValue += 11;
+                    this.cardValue += 11;
+                    System.out.println("Current hand value is: " + this.cardValue);
                 }
                 break;
             case 11:
                 System.out.println("Your drawn card is Jack of " + drawnSuit);
-                cardValue += 10;
+                this.cardValue += 10;
+                System.out.println("Current hand value is: " + this.cardValue);
                 break;
             case 12:
                 System.out.println("Your drawn card is Queen of " + drawnSuit);
-                cardValue += 10;
+                this.cardValue += 10;
+                System.out.println("Current hand value is: " + this.cardValue);
                 break;
             case 13:
                 System.out.println("Your drawn card is King of " + drawnSuit);
-                cardValue += 10;
+                this.cardValue += 10;
+                System.out.println("Current hand value is: " + this.cardValue);
                 break;
             default:
                 System.out.println("Your drawn card is " + drawnCard + " of " + drawnSuit);
-                cardValue += drawnCard;
+                this.cardValue += drawnCard;
+                System.out.println("Current hand value is: " + this.cardValue);
                 break;
         }
 
     }
 
     public int getCardValue() {
-        return cardValue;
+        return this.cardValue;
     }
 }

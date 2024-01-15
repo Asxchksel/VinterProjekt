@@ -1,20 +1,16 @@
-public class Players extends CardDeck{
-private int cards;
-private int maxCards = 5;
+import java.util.Scanner;
 
-public Players(){}
+public class Players extends CardDeck {
+    private int cards;
+    private int maxCards = 5;
+    public Scanner keyb = new Scanner(System.in);
+
+    public Players() {
+        this.cards = cards;
+    }
 
     @Override
     public void drawCard() {
-    if (cards < maxCards){
-        super.drawCard();
-        cards += 1;
-        if(getCardValue() > 21 ){
-            System.out.println("You lose!");
-            }
-        }
-    else {
-        System.out.println("Too many Cards");
-    }
+
     }
 }

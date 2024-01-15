@@ -6,7 +6,5 @@ public class Main {
         Hobbyist Player1 = new Hobbyist();
 
         Player1.drawCard();
-
-
     }
 }

@@ -8,6 +8,8 @@ public class Dealer extends Players{
 
     public void takeCard(){
         drawCard();
-
+        if(getCardValue() >= 17 || getCardValue() > 21){
+            System.out.println("Dealer stops");
+        }
     }
 }
