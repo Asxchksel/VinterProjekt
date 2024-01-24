@@ -1,36 +1,33 @@
-import java.util.Scanner;
-
-public class Hobbyist extends Players{
-    private int cards;
-    private int maxCards = 5;
-    public Scanner keyb = new Scanner(System.in);
-
-    public Hobbyist(){
+public class Hobbyist extends Players {
+    public Hobbyist() {
         super();
     }
 
-    @Override
-    public void drawCard() {
+    public void PlayGame() {
         Dealer dealer = new Dealer();
-        if (this.cards < maxCards){
-            super.drawCard();
-            this.cards += 1;
-            if(getCardValue() > 21 ){
-                System.out.println("You lose!");
-            } else if (getCardValue() < 21) {
-                System.out.println("Do you want to draw another? Yes/No");
-                String drawAgain = keyb.nextLine();
-                if (drawAgain.equalsIgnoreCase("YES")){
-                    drawCard();
-                } else if (drawAgain.equalsIgnoreCase("NO")) {
-                    dealer.drawCard();
+        Hand playerHand1 = new Hand();
+        Card cards = new Card();
+        if (getCards() < getMaxCards() && getCardValue() < 21) {
+            while (true) {
+                System.out.println("Do you want to draw a card? Yes/No");
+                try {
+                    String drawAgain = keyb.nextLine();
+                    if (drawAgain.equalsIgnoreCase("YES")) {
+                        cards.drawCard();
+                        setCards(getCards() + 1);
+                        PlayGame();
+                        break;
+                    } else if (drawAgain.equalsIgnoreCase("NO")) {
+                        dealer.takeCard();
+                        break;
+                    }
+                } catch (Exception e) {
+                    System.out.println("Not a valid choice");
                 }
             }
-        }
-        else {
-            System.out.println("Too many Cards");
+        } else {
+            System.out.println("You cant take another card");
+            dealer.takeCard();
         }
     }
-
-
-    }
+}

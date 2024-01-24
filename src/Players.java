@@ -2,15 +2,23 @@ import java.util.Scanner;
 
 public class Players extends CardDeck {
     private int cards;
-    private int maxCards = 5;
-    public Scanner keyb = new Scanner(System.in);
+    private final int maxCards = 5;
+    protected Scanner keyb = new Scanner(System.in);
 
     public Players() {
         this.cards = cards;
     }
 
-    @Override
-    public void drawCard() {
 
+    public int getCards() {
+        return this.cards;
+    }
+
+    public void setCards(int cards) {
+        this.cards = cards;
+    }
+
+    public int getMaxCards() {
+        return this.maxCards;
     }
 }

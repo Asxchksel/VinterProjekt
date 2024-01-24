@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="fixat mer med drawCard metod">
+    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="gjorde fel någonstans när jag flyttade kod till hobbyist. Fixade ddrawcard metod">
+      <change afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardDeck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dealer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hobbyist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hobbyist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +25,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -51,10 +58,24 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "advanced.settings",
+    "settings.editor.selected.configurable": "actions.on.save",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="VinterProjekt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -86,7 +107,11 @@
       <workItem from="1705303748183" duration="509000" />
       <workItem from="1705304281947" duration="323000" />
       <workItem from="1705304627190" duration="1983000" />
-      <workItem from="1705306642259" duration="1350000" />
+      <workItem from="1705306642259" duration="1548000" />
+      <workItem from="1705908599547" duration="306000" />
+      <workItem from="1705908921054" duration="10739000" />
+      <workItem from="1706045325185" duration="118000" />
+      <workItem from="1706087099105" duration="3365000" />
     </task>
     <task id="LOCAL−00001" summary="start">
       <option name="closed" value="true" />
@@ -123,7 +148,14 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1704881174897</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="gjorde fel någonstans när jag flyttade kod till hobbyist. Fixade ddrawcard metod">
+      <option name="closed" value="true" />
+      <created>1705308180002</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1705308180002</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +167,10 @@
     <MESSAGE value="random card given" />
     <MESSAGE value="Draw card ready in the deck class" />
     <MESSAGE value="fixat mer med drawCard metod" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixat mer med drawCard metod" />
+    <MESSAGE value="gjorde fel någonstans när jag flyttade kod till hobbyist. Fixade ddrawcard metod" />
+    <option name="LAST_COMMIT_MESSAGE" value="gjorde fel någonstans när jag flyttade kod till hobbyist. Fixade ddrawcard metod" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/VinterProjekt$Main.ic" NAME="Main Coverage Results" MODIFIED="1705928217348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
