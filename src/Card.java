@@ -1,52 +1,38 @@
-public class Card extends CardDeck {
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
+public class Card {
     private int cardValue;
-    private String cardRank;
+    private String drawnSuit;
+    private final ArrayList<String> suit = new ArrayList<String>();
 
-    private boolean takenFromDeck;
-
-    @Override
-    public void drawCard() {
-        super.drawCard();
-        switch (getRandomRank()) {
-            case 1:
-                System.out.println("Your drawn card is Ace");
-                if (getCardValue() + 11 > 21) {
-                    setCardValue(getCardValue() + 1);
-                } else {
-                    setCardValue(getCardValue() + 11);
-                }
-                System.out.println("Current hand value is: " + getCardValue());
-                break;
-            case 11:
-                System.out.println("Your drawn card is Jack of " + getDrawnSuit());
-                setCardValue(getCardValue() + 10);
-                System.out.println("Current hand value is: " + getCardValue());
-                break;
-            case 12:
-                System.out.println("Your drawn card is Queen of " + getDrawnSuit());
-                setCardValue(getCardValue() + 10);
-                System.out.println("Current hand value is: " + getCardValue());
-                break;
-            case 13:
-                System.out.println("Your drawn card is King of " + getDrawnSuit());
-                setCardValue(getCardValue() + 10);
-                System.out.println("Current hand value is: " + getCardValue());
-                break;
-            default:
-                System.out.println("Your drawn card is " + getDrawnCard() + " of " + getDrawnSuit());
-                setCardValue(getCardValue() + getDrawnCard());
-                System.out.println("Current hand value is: " + getCardValue());
-                break;
-        }
-        switch (getRandomSuit()) {
-            case 1:
-                System.out.println("of Hearts");
-            case 2:
-                System.out.println("of Clubs");
-            case 3:
-                System.out.println("of Spades");
-            case 4:
-                System.out.println("of Diamonds");
-        }
+    //lägger till olika korttyper i en list medans man gör klassen
+    public Card() {
+        Collections.addAll(suit, "Hearts", "Spades", "Diamonds", "Clubs");
     }
+
+
+    //draws a random card with value and suit på kortet
+    public void drawCard() {
+        Random random = new Random();
+        cardValue = random.nextInt(13) + 1;
+        int randomSuit = random.nextInt(4);
+        drawnSuit = suit.get(randomSuit);
+
+    }
+
+    public int getCardValue() {
+        return cardValue;
+    }
+
+    public String getDrawnSuit() {
+        return drawnSuit;
+    }
+
+    public ArrayList<String> getSuit() {
+        return suit;
+    }
+
+
 }

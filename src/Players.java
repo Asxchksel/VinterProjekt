@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Players extends CardDeck {
+//Ger Dealer och spelare ett max antal kort man kan ha samt även hur mycket kort man har då
+public class Players extends Hand {
     private int cards;
     private final int maxCards = 5;
     protected Scanner keyb = new Scanner(System.in);
@@ -8,7 +9,6 @@ public class Players extends CardDeck {
     public Players() {
         this.cards = cards;
     }
-
 
     public int getCards() {
         return this.cards;

@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="gjorde fel någonstans när jag flyttade kod till hobbyist. Fixade ddrawcard metod">
-      <change afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hand.java" afterDir="false" />
+    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="vet ej vad jag gjorde idag">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardDeck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hobbyist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hobbyist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
@@ -43,25 +43,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -111,7 +111,9 @@
       <workItem from="1705908599547" duration="306000" />
       <workItem from="1705908921054" duration="10739000" />
       <workItem from="1706045325185" duration="118000" />
-      <workItem from="1706087099105" duration="3365000" />
+      <workItem from="1706087099105" duration="3790000" />
+      <workItem from="1706468250566" duration="1911000" />
+      <workItem from="1706471627226" duration="9428000" />
     </task>
     <task id="LOCAL−00001" summary="start">
       <option name="closed" value="true" />
@@ -155,11 +157,29 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1705308180002</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="vet ej vad jag gjorde idag">
+      <option name="closed" value="true" />
+      <created>1706090881867</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1706090881867</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
@@ -168,7 +188,8 @@
     <MESSAGE value="Draw card ready in the deck class" />
     <MESSAGE value="fixat mer med drawCard metod" />
     <MESSAGE value="gjorde fel någonstans när jag flyttade kod till hobbyist. Fixade ddrawcard metod" />
-    <option name="LAST_COMMIT_MESSAGE" value="gjorde fel någonstans när jag flyttade kod till hobbyist. Fixade ddrawcard metod" />
+    <MESSAGE value="vet ej vad jag gjorde idag" />
+    <option name="LAST_COMMIT_MESSAGE" value="vet ej vad jag gjorde idag" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VinterProjekt$Main.ic" NAME="Main Coverage Results" MODIFIED="1705928217348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
