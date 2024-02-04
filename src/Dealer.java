@@ -5,54 +5,50 @@ public class Dealer extends Players {
     public Dealer() {
     }
 
-    //körs autmoatiskt efter spelaren har kört färdigt ger delaern sina kort, kollar även vem som vinner huset eller spelare
+    //automatically is run after the player is done to give dealer their cards
     public void takeCard() {
-        while (getCardValue() < 17 && getCardValue() < 21 && getCards() < getMaxCards()) {
-            super.drawCard();
-            switch (getCardValue()) {
+        while (getHandValue() < 17 && getHandValue() < 21 && getCards() < getMaxCards()) {
+            CardDeck cards = new CardDeck();
+            int pickedCardValue = cards.getCardValue();
+            String pickedCardSuit = cards.getDrawnSuit();
+            switch (pickedCardValue) {
                 case 1:
-                    System.out.println("Dealers drawn card is Ace of " + getDrawnSuit());
-                    if (getCardValue() + 11 > 21) {
+                    System.out.println("Dealers drawn card is Ace of " + pickedCardSuit);
+                    if (getHandValue() + 11 > 21) {
                         setHandValue(getHandValue() + 1);
-                        System.out.println("Dealers hand value is: " + getCardValue());
+                        System.out.println("Dealers hand value is: " + pickedCardSuit);
                         setCards(getCards() + 1);
                     } else {
                         setHandValue(getHandValue() + 11);
-                        System.out.println("Dealers hand value is: " + getCardValue());
+                        System.out.println("Dealers hand value is: " + getHandValue());
                         setCards(getCards() + 1);
                     }
                     break;
                 case 11:
-                    System.out.println("Dealers drawn card is Jack of " + getDrawnSuit());
+                    System.out.println("Dealers drawn card is Jack of " + pickedCardSuit);
                     setHandValue(getHandValue() + 10);
-                    System.out.println("Dealers hand value is: " + getCardValue());
+                    System.out.println("Dealers hand value is: " + getHandValue());
                     setCards(getCards() + 1);
                     break;
                 case 12:
-                    System.out.println("Dealers drawn card is Queen of " + getDrawnSuit());
+                    System.out.println("Dealers drawn card is Queen of " + pickedCardSuit);
                     setHandValue(getHandValue() + 10);
-                    System.out.println("Dealers hand value is: " + getCardValue());
+                    System.out.println("Dealers hand value is: " + getHandValue());
                     setCards(getCards() + 1);
                     break;
                 case 13:
-                    System.out.println("Dealers drawn card is King of " + getDrawnSuit());
+                    System.out.println("Dealers drawn card is King of " + pickedCardSuit);
                     setHandValue(getHandValue() + 10);
                     System.out.println("Dealers hand value is: " + getHandValue());
                     setCards(getCards() + 1);
                     break;
                 default:
-                    System.out.println("Dealers drawn card is " + getCardValue() + " of " + getDrawnSuit());
-                    setHandValue(getHandValue() + getCardValue());
+                    System.out.println("Dealers drawn card is " + pickedCardValue + " of " + pickedCardSuit);
+                    setHandValue(getHandValue() + pickedCardValue);
                     System.out.println("Dealers hand value is: " + getHandValue());
                     setCards(getCards() + 1);
                     break;
             }
-        }/*
-        System.out.println("Dealer stops");
-        if (player1.handValue > getHandValue()) {
-            System.out.println("Player wins");
-        } else if (player1.handValue <= getHandValue()) {
-            System.out.println("House wins");
-        }*/
+        }
     }
 }

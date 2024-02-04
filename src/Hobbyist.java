@@ -3,18 +3,16 @@ public class Hobbyist extends Players {
         super();
     }
 
-    //startar hela systemet och gör så man få välja om man vill ta fler kort
+    //starts the game and asks the player if they want to take another card gives turn to dealer if maximum card are taken
     public void PlayGame() {
         Dealer dealer = new Dealer();
-        Hand playerHand1 = new Hand();
-        Card cards = new Card();
-        if (getCards() < getMaxCards() && getCardValue() < 21) {
+        if (getCards() < getMaxCards()) {
             while (true) {
                 System.out.println("Do you want to draw a card? Yes/No");
                 try {
                     String drawAgain = keyb.nextLine();
                     if (drawAgain.equalsIgnoreCase("YES")) {
-                        cards.drawCard();
+                        drawCard();
                         setCards(getCards() + 1);
                         PlayGame();
                         break;
@@ -33,12 +31,14 @@ public class Hobbyist extends Players {
     }
 
 
-    //Output för vilket kort man får och sitt värde på handen
-    @Override
+    //Output for what card the player gets and tells them that
     public void drawCard() {
-        switch (getCardValue()) {
+        CardDeck cards = new CardDeck();
+        int pickedCardValue = cards.getCardValue();
+        String pickedCardSuit = cards.getDrawnSuit();
+        switch (pickedCardValue) {
             case 1:
-                System.out.println("Your drawn card is Ace of " + getDrawnSuit());
+                System.out.println("Your drawn card is Ace of " + pickedCardSuit);
                 if (getHandValue() + 11 > 21) {
                     setHandValue(getHandValue() + 1);
                 } else {
@@ -47,23 +47,23 @@ public class Hobbyist extends Players {
                 System.out.println("Current hand value is: " + getHandValue());
                 break;
             case 11:
-                System.out.println("Your drawn card is Jack of " + getDrawnSuit());
+                System.out.println("Your drawn card is Jack of " + pickedCardSuit);
                 setHandValue(getHandValue() + 10);
                 System.out.println("Current hand value is: " + getHandValue());
                 break;
             case 12:
-                System.out.println("Your drawn card is Queen of " + getDrawnSuit());
+                System.out.println("Your drawn card is Queen of " + pickedCardSuit);
                 setHandValue(getHandValue() + 10);
                 System.out.println("Current hand value is: " + getHandValue());
                 break;
             case 13:
-                System.out.println("Your drawn card is King of " + getDrawnSuit());
+                System.out.println("Your drawn card is King of " + pickedCardSuit);
                 setHandValue(getHandValue() + 10);
                 System.out.println("Current hand value is: " + getHandValue());
                 break;
             default:
-                System.out.println("Your drawn card is " + getCardValue() + " of " + getDrawnSuit());
-                setHandValue(getHandValue() + getCardValue());
+                System.out.println("Your drawn card is " + pickedCardValue + " of " + pickedCardSuit);
+                setHandValue(getHandValue() + pickedCardValue);
                 System.out.println("Current hand value is: " + getHandValue());
                 break;
         }
