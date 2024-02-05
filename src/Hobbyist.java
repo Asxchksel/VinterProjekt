@@ -6,7 +6,7 @@ public class Hobbyist extends Players {
     //starts the game and asks the player if they want to take another card gives turn to dealer if maximum card are taken
     public void PlayGame() {
         Dealer dealer = new Dealer();
-        if (getCards() < getMaxCards()) {
+        if (getCards() < getMaxCards() && getHandValue() < 21) {
             while (true) {
                 System.out.println("Do you want to draw a card? Yes/No");
                 try {
@@ -72,7 +72,7 @@ public class Hobbyist extends Players {
 
     //Compares results from dealer and the player to see who won
     public void endGame(Dealer dealer) {
-        if (dealer.getHandValue() >= getHandValue() && dealer.getHandValue() <= 21) {
+        if (dealer.getHandValue() >= getHandValue() && dealer.getHandValue() <= 21 || getHandValue() > 21) {
             System.out.println("You lose, House wins as intended :)");
             setCards(0);
             setHandValue(0);

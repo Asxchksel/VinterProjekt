@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="">
+    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hobbyist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hobbyist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +110,8 @@
       <workItem from="1706471627226" duration="9448000" />
       <workItem from="1707066743797" duration="273000" />
       <workItem from="1707067121516" duration="8427000" />
+      <workItem from="1707095247232" duration="168000" />
+      <workItem from="1707117971174" duration="780000" />
     </task>
     <task id="LOCAL−00001" summary="start">
       <option name="closed" value="true" />
@@ -180,7 +183,14 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1707095170163</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="?">
+      <option name="closed" value="true" />
+      <created>1707095394271</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1707095394271</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +217,8 @@
     <MESSAGE value="vet ej vad jag gjorde idag" />
     <MESSAGE value="tog bort hand, fixade lite mer oop orienterat samt" />
     <MESSAGE value="fixade så att dealer och spelare kan vinna samt fixade bugg där värde på kort inte dök upp" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixade så att dealer och spelare kan vinna samt fixade bugg där värde på kort inte dök upp" />
+    <MESSAGE value="?" />
+    <option name="LAST_COMMIT_MESSAGE" value="?" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VinterProjekt$Main.ic" NAME="Main Coverage Results" MODIFIED="1705928217348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
