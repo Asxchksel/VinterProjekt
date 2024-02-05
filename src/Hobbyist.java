@@ -18,6 +18,7 @@ public class Hobbyist extends Players {
                         break;
                     } else if (drawAgain.equalsIgnoreCase("NO")) {
                         dealer.takeCard();
+                        endGame(dealer);
                         break;
                     }
                 } catch (Exception e) {
@@ -27,9 +28,9 @@ public class Hobbyist extends Players {
         } else {
             System.out.println("You cant take another card");
             dealer.takeCard();
+            endGame(dealer);
         }
     }
-
 
     //Output for what card the player gets and tells them that
     public void drawCard() {
@@ -66,6 +67,45 @@ public class Hobbyist extends Players {
                 setHandValue(getHandValue() + pickedCardValue);
                 System.out.println("Current hand value is: " + getHandValue());
                 break;
+        }
+    }
+
+    //Compares results from dealer and the player to see who won
+    public void endGame(Dealer dealer) {
+        if (dealer.getHandValue() >= getHandValue() && dealer.getHandValue() <= 21) {
+            System.out.println("You lose, House wins as intended :)");
+            setCards(0);
+            setHandValue(0);
+            dealer.setHandValue(0);
+            dealer.setCards(0);
+            System.out.println("Do you want to try again?: Yes/No");
+            try {
+                String playAgain = keyb.nextLine();
+                if (playAgain.equalsIgnoreCase("YES")) {
+                    PlayGame();
+                } else if (playAgain.equalsIgnoreCase("NO")) {
+                    System.out.println("Too bad");
+                }
+            } catch (Exception e) {
+                System.out.println("Not a valid choice");
+            }
+        } else if (dealer.getHandValue() < getHandValue() || dealer.getHandValue() > 21) {
+            System.out.println("You win, House loses as you should :)");
+            setCards(0);
+            setHandValue(0);
+            dealer.setHandValue(0);
+            dealer.setCards(0);
+            System.out.println("Do you want to try again?: Yes/No");
+            try {
+                String playAgain = keyb.nextLine();
+                if (playAgain.equalsIgnoreCase("YES")) {
+                    PlayGame();
+                } else if (playAgain.equalsIgnoreCase("NO")) {
+                    System.out.println("Too bad");
+                }
+            } catch (Exception e) {
+                System.out.println("Not a valid choice");
+            }
         }
     }
 }

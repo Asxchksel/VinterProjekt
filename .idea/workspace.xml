@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="vet ej vad jag gjorde idag">
+    <list default="true" id="d9e430eb-cb80-48fa-bbda-a00d7ba49940" name="Changes" comment="tog bort hand, fixade lite mer oop orienterat samt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hand.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hobbyist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hobbyist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +110,7 @@
       <workItem from="1706468250566" duration="1911000" />
       <workItem from="1706471627226" duration="9448000" />
       <workItem from="1707066743797" duration="273000" />
-      <workItem from="1707067121516" duration="7437000" />
+      <workItem from="1707067121516" duration="8198000" />
     </task>
     <task id="LOCAL−00001" summary="start">
       <option name="closed" value="true" />
@@ -173,7 +168,14 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1706517637112</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="tog bort hand, fixade lite mer oop orienterat samt">
+      <option name="closed" value="true" />
+      <created>1707090315647</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1707090315648</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +200,8 @@
     <MESSAGE value="fixat mer med drawCard metod" />
     <MESSAGE value="gjorde fel någonstans när jag flyttade kod till hobbyist. Fixade ddrawcard metod" />
     <MESSAGE value="vet ej vad jag gjorde idag" />
-    <option name="LAST_COMMIT_MESSAGE" value="vet ej vad jag gjorde idag" />
+    <MESSAGE value="tog bort hand, fixade lite mer oop orienterat samt" />
+    <option name="LAST_COMMIT_MESSAGE" value="tog bort hand, fixade lite mer oop orienterat samt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VinterProjekt$Main.ic" NAME="Main Coverage Results" MODIFIED="1705928217348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

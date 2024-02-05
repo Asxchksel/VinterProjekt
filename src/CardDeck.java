@@ -17,7 +17,7 @@ public class CardDeck {
     //Generates a new card for the player or dealer
     public void DrawCard() {
         Random random = new Random();
-        int cardValue = random.nextInt(13) + 1;
+        cardValue = random.nextInt(13) + 1;
         int randomSuit = random.nextInt(4);
         drawnSuit = suit[randomSuit];
     }
