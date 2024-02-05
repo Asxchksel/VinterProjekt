@@ -89,7 +89,7 @@ public class Hobbyist extends Players {
             } catch (Exception e) {
                 System.out.println("Not a valid choice");
             }
-        } else if (dealer.getHandValue() < getHandValue() || dealer.getHandValue() > 21) {
+        } else if (dealer.getHandValue() < getHandValue() && getHandValue() <= 21 || dealer.getHandValue() > 21) {
             System.out.println("You win, House loses as you should :)");
             setCards(0);
             setHandValue(0);
