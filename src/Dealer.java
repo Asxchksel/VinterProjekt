@@ -6,47 +6,34 @@ public class Dealer extends Players {
     }
 
     //automatically is run after the player is done to give dealer their cards
-    public void takeCard() {
+    public void drawCard() {
+        super.drawCard();
         while (getHandValue() < 17 && getHandValue() < 21 && getCards() < getMaxCards()) {
-            CardDeck cards = new CardDeck();
-            int pickedCardValue = cards.getCardValue();
-            String pickedCardSuit = cards.getDrawnSuit();
-            switch (pickedCardValue) {
+            switch (getPickedCardValue()) {
                 case 1:
-                    System.out.println("Dealers drawn card is Ace of " + pickedCardSuit);
-                    if (getHandValue() + 11 > 21) {
-                        setHandValue(getHandValue() + 1);
-                        System.out.println("Dealers hand value is: " + pickedCardSuit);
-                        setCards(getCards() + 1);
-                    } else {
-                        setHandValue(getHandValue() + 11);
-                        System.out.println("Dealers hand value is: " + getHandValue());
-                        setCards(getCards() + 1);
-                    }
+                    System.out.println("Dealer drawn card is Ace of " + getPickedCardSuit());
+                    setCards(getCards() + 1);
+                    drawCard();
                     break;
                 case 11:
-                    System.out.println("Dealers drawn card is Jack of " + pickedCardSuit);
-                    setHandValue(getHandValue() + 10);
-                    System.out.println("Dealers hand value is: " + getHandValue());
+                    System.out.println("Dealer drawn card is Jack of " + getPickedCardSuit());
                     setCards(getCards() + 1);
+                    drawCard();
                     break;
                 case 12:
-                    System.out.println("Dealers drawn card is Queen of " + pickedCardSuit);
-                    setHandValue(getHandValue() + 10);
-                    System.out.println("Dealers hand value is: " + getHandValue());
+                    System.out.println("Dealer drawn card is Queen of " + getPickedCardSuit());
                     setCards(getCards() + 1);
+                    drawCard();
                     break;
                 case 13:
-                    System.out.println("Dealers drawn card is King of " + pickedCardSuit);
-                    setHandValue(getHandValue() + 10);
-                    System.out.println("Dealers hand value is: " + getHandValue());
+                    System.out.println("Dealer drawn card is King of " + getPickedCardSuit());
                     setCards(getCards() + 1);
+                    drawCard();
                     break;
                 default:
-                    System.out.println("Dealers drawn card is " + pickedCardValue + " of " + pickedCardSuit);
-                    setHandValue(getHandValue() + pickedCardValue);
-                    System.out.println("Dealers hand value is: " + getHandValue());
+                    System.out.println("Dealer drawn card is " + getPickedCardValue() + " of " + getPickedCardSuit());
                     setCards(getCards() + 1);
+                    drawCard();
                     break;
             }
         }
